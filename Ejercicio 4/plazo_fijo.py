@@ -9,6 +9,7 @@ class plazo_fijo(cuenta_bancaria.cuenta_bnc):
         return self.fecha_vencimiento
     def set_fecha_vencimiento(self, fecha_vencimiento):
         self.fecha_vencimiento = fecha_vencimiento
+        
     def penalizador_retirar(self, fecha_vencimiento, saldo, fecha_ap):
         if fecha_ap > fecha_vencimiento:
             print("¿cuanto dinero quieres retirar?")
