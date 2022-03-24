@@ -11,7 +11,18 @@ class cuenta_bnc:
 
     def get_nombre(self):
         return self.nombre
-        
+    
+    def set_nombre(self, nombre):
+        self.nombre = nombre
+
+    def get_fecha(self):
+        return self.fecha_ap
+
+    def get_numcuenta(self):
+        return self.num_cuenta
+
+    def get_saldo(self):
+        return self.saldo
 
 
     
