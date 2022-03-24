@@ -25,7 +25,10 @@ class cuenta_bnc:
         return self.saldo
 
     def retirar(self, saldo):
-        pass
+        print("¿Que cantidad de dinero quieres retirar?")
+        respuesta = int(input())
+        saldo = saldo - respuesta
+
     def ingresar(self, saldo):
         pass
     def transferir(self, saldo):
