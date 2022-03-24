@@ -17,12 +17,17 @@ if __name__ == "__main__":
     cuenta_bancaria.cuenta_bnc.get_numcuenta = random.randint(100000000000, 999999999999)
     print(cuenta_bancaria.cuenta_bnc.get_numcuenta)
     cuenta_bancaria.cuenta_bnc.get_id = 123456
+    print(cuenta_bancaria.cuenta_bnc.get_id)
     cuenta_bancaria.cuenta_bnc.get_fecha = inicio + (final - inicio)*random.random()
+    print(cuenta_bancaria.cuenta_bnc.get_fecha)
     cuenta_bancaria.cuenta_bnc.get_saldo = random.randint(30, 200000)
+    print(cuenta_bancaria.cuenta_bnc.get_saldo)
     if respuesta == "vip":
         vip.cuenta_vip.get_negativo_max = -2000
+        print(vip.cuenta_vip.get_negativo_max)
     elif respuesta == "plazo fijo":
         plazo_fijo.plazo_fijo.get_fecha_vencimiento = inicio + (final - inicio)*random.random()
+        print(plazo_fijo.plazo_fijo.get_fecha_vencimiento)
     elif respuesta == "normal":
         pass
     else:
