@@ -33,11 +33,13 @@ class cuenta_bnc:
             print("No es posible.")
         else: 
             saldo = saldo - respuesta
+        return saldo
 
     def ingresar(self, saldo):
         print("¿Que cantidad de dinero quiere ingresar?")
         respuesta = int(input())
         saldo = saldo + respuesta
+        return saldo
     
     def transferir(self, saldo, saldo_recibe, num_recibe, num_retira):
         print("¿cual es su numero de cuenta?")
@@ -52,5 +54,5 @@ class cuenta_bnc:
         else:
             cuenta_bnc.retirar(saldo, num_retira)
             cuenta_bnc.ingresar(saldo_recibe, num_recibe)
-
+        return saldo, saldo_recibe
 
