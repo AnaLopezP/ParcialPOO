@@ -24,7 +24,9 @@ class cuenta_bnc:
     def get_saldo(self):
         return self.saldo
 
-    def retirar(self, saldo):
+    def retirar(self, num_cuenta, saldo):
+        print("¿cual es su numero de cuenta?")
+        num_cuenta = str(input())
         print("¿Que cantidad de dinero quieres retirar?")
         respuesta = int(input())
         if respuesta > saldo:
@@ -37,8 +39,20 @@ class cuenta_bnc:
         respuesta = int(input())
         saldo = saldo + respuesta
     
-    def transferir(self, saldo, ):
-        pass
+    def transferir(self, saldo, saldo_recibe, num_recibe, num_retira):
+        print("¿cual es su numero de cuenta?")
+        num_retira = (int(input()))
+        print("A que numero de cuenta quiere realizar latransaccion?")
+        print("Introduzca el num de cuenta")
+        num_recibe = int(input())
+        print("¿Cuanto dinero quiere transferir?")
+        respuesta = int(input())
+        if respuesta > saldo:
+            print("No es posible realizar la transferencia")
+        else:
+            cuenta_bnc.retirar(saldo, num_retira)
+            cuenta_bnc.ingresar(saldo_recibe, num_recibe)
+
 
 
     
