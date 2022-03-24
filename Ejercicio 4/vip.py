@@ -20,8 +20,6 @@ class cuenta_vip(cuenta_bancaria.cuenta_bnc):
         return saldo
 
     def transferir(self, saldo, saldo_recibe, num_recibe, num_retira, negativo_max):
-        print("¿cual es su numero de cuenta?")
-        num_retira = (int(input()))
         print("A que numero de cuenta quiere realizar latransaccion?")
         print("Introduzca el num de cuenta")
         num_recibe = int(input())
