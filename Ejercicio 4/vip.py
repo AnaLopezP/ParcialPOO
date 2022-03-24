@@ -10,9 +10,7 @@ class cuenta_vip(cuenta_bancaria.cuenta_bnc):
     def set_negativo_max(self, negativo_max):
         self.negativo_max = negativo_max
 
-    def retirar(self, num_cuenta, saldo, negativo_max):
-        print("¿cual es su numero de cuenta?")
-        num_cuenta = str(input())
+    def retirar(self, saldo, negativo_max):
         print("¿Que cantidad de dinero quieres retirar?")
         respuesta = int(input())
         if saldo < negativo_max:
