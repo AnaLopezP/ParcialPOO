@@ -11,4 +11,3 @@ class plazo_fijo(cuenta_bancaria.cuenta_bnc):
         self.fecha_vencimiento = fecha_vencimiento
     def penalizador(self, fecha_vencimiento, saldo):
         pass
-    
