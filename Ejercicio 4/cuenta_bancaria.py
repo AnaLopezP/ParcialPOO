@@ -24,9 +24,7 @@ class cuenta_bnc:
     def get_saldo(self):
         return self.saldo
 
-    def retirar(self, num_cuenta, saldo):
-        print("¿cual es su numero de cuenta?")
-        num_cuenta = str(input())
+    def retirar(self, saldo):
         print("¿Que cantidad de dinero quieres retirar?")
         respuesta = int(input())
         if respuesta > saldo:
