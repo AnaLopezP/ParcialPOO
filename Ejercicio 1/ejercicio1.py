@@ -1,6 +1,3 @@
-from mailbox import NoSuchMailboxError
-
-
 class Libro:
     def __init__(self, paginas, tapa,nombre, autor, genero, isbn):
         self.paginas = paginas
