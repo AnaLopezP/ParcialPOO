@@ -24,5 +24,12 @@ class cuenta_bnc:
     def get_saldo(self):
         return self.saldo
 
+    def retirar(self, saldo):
+        pass
+    def ingresar(self, saldo):
+        pass
+    def transferir(self, saldo):
+        pass
+
 
     
